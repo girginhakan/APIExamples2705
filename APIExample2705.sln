@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIExample2705", "APIExample2705\APIExample2705.csproj", "{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIExample2705", "APIExample2705\APIExample2705.csproj", "{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCGaleriExample2805", "MVCGaleriExample2805\MVCGaleriExample2805.csproj", "{1D9AD458-4E68-4738-A518-F76ED6D338DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

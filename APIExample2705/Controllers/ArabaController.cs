@@ -34,7 +34,11 @@ namespace APIExample2705.Controllers
         [HttpDelete("ArabaSil")]
         public IActionResult ArabaSil(int id)
         {
-            _context.Arabalar.Remove(_context.Arabalar.Find(id));
+           var silinecekAraba= _context.Arabalar.Remove(_context.Arabalar.Find(id));
+            if (silinecekAraba==null)
+            {
+                return BadRequest("silmek istediğiniz id ye sahip biri bulunamadı");
+            }
             _context.SaveChanges();
             return Ok();
         }
@@ -51,6 +55,16 @@ namespace APIExample2705.Controllers
 
             _context.SaveChanges();
             return Ok();
+        }
+
+        [HttpGet("IdYeGoreGetir")]
+        public IActionResult IdYeGoreGetir(int id)
+        {
+            var arananAraba = _context.Arabalar.Find(id);
+            if (arananAraba==null)
+                return BadRequest("aradığınız araba bulunamadı");
+
+            return Ok(arananAraba);
         }
 
     }

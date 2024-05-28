@@ -1,0 +1,37 @@
+﻿@using MVCGaleriExample2805.Data.Entities
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Araba>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<table class="table table-warning table-hover table-bordered">
+    <tr>
+        <td>ID</td>
+        <td>Marka</td>
+        <td>Renk</td>
+        <td>İşlemler</td>
+    </tr>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Marka</td>
+            <td>@item.Renk</td>
+            <td>
+                <a asp-action="ArabaDuzenle" asp-route-id="@item.Id">Düzenle</a>
+                <a asp-action="ArabaSil" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+        }
+
+</table>
+
+
+
