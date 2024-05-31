@@ -4,3 +4,148 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+@* 
+<table id="tblArabalar" class="table table-dark">
+    <thead>
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                Marka
+            </td>
+            <td>
+                Renk
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+
+</table>
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#AracEkleme" aria-expanded="false" aria-controls="collapseWidthExample">
+        Yeni araç eklemek için tıklayınız
+    </button>
+</p>
+<div style="min-height: 120px;">
+    <div class="collapse " id="AracEkleme">
+        <div class="mb-3">
+            <label for="txtMarka" class="form-label">Marka</label>
+            <input class="form-control" id="txtMarka" placeholder="Marka">
+        </div>
+        <div class="mb-3">
+            <label for="txtRenk" class="form-label">Renk</label>
+            <input class="form-control" id="txtRenk" placeholder="Renk">
+        </div>
+        <div class="mb-3">
+            <button class="form-control btn btn-outline-success" onclick="AracEkle()">Ekle</button>
+        </div>
+    </div>
+</div> *@
+
+@* <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#AracEkleme" aria-expanded="false" aria-controls="collapseWidthExample">
+        Yeni araç eklemek için tıklayınız
+    </button>
+</p>
+<div style="min-height: 120px;">
+    <div class="collapse " id="AracEkleme">
+        <div class="mb-3">
+            <label for="txtMarka" class="form-label">Marka</label>
+            <input class="form-control" id="txtMarka" placeholder="Marka">
+        </div>
+        <div class="mb-3">
+            <label for="txtRenk" class="form-label">Fiyat</label>
+            <input class="form-control" id="txtRenk" placeholder="Renk">
+        </div>
+        
+        <div class="mb-3">
+            <button class="form-control btn btn-outline-success" onclick="AracEkle()">Ekle</button>
+        </div>
+
+    </div>
+</div> *@
+@*
+    ------------------------------------------------------------------------------------------------
+*@
+
+
+<table id="tblArabalar" class="table table-dark">
+    <thead>
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                Marka
+            </td>
+            <td>
+                Fiyat
+            </td>
+
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+
+</table>
+
+<div class="container mt-3">
+    <h2>Araba EKleme Bölümü</h2>
+    <p>Araba ekleme bölümü için butona basınız</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#ekleme">EKLEME BÖLÜMÜ</button>
+    <div id="ekleme" class="collapse">
+        <table class="table table-hover">
+            <tr><td>Marka:</td><td><input id="txtMarka" /></td></tr>
+            <tr><td>Renk:</td><td><input id="txtRenk" /></td></tr>
+
+            <tr><td><button onclick="Ekle()" class="btn btn-outline-success">EKLE</button></td></tr>
+        </table>
+    </div>
+</div>
+
+<!--The Modal-- >
+<div class="modal" id="guncellemePenrecesi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+<div class="modal-header">
+    <h4 class="modal-title">Güncelleme Ekranı</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+    <table class="table table-hover">
+        <tr><td>Id:</td><td><input id="txtId" readonly /></td></tr>
+        <tr><td>Marka:</td><td><input id="txtGuncelMarka" /></td></tr>
+        <tr><td>Fiyat:</td><td><input id="txtGuncelFiyat" /></td></tr>
+        <tr><td>Durum:</td><td><input type="checkbox" id="chcGuncelDurum" /></td></tr>
+        <tr>
+            <td>
+                <button onclick="Guncelle($('#txtId').val())" class="btn btn-warning" id="btnGuncelle">
+                    GÜNCELLE
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">  </script>
+<script type="text/javascript" src="~/js/index.js"></script>

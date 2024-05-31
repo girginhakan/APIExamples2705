@@ -1,0 +1,16 @@
+﻿@using MVCGaleriExample2805.Data.Entities
+@model Araba
+
+
+
+<form asp-action="ArabaGuncelle" method="post">
+    <div class="mb-3">
+        <label for="arabaMarka" class="form-label">Marka</label>
+        <input asp-for="Marka" type="text" class="form-control" id="arabaMarka">
+    </div>
+    <div class="mb-3">
+        <label for="arabaRenk" class="form-label">Renk</label>
+        <input asp-for="Renk" type="text" class="form-control" id="arabaRenk">
+    </div>
+    <input class="btn btn-outline-success" type="submit" value="Araba Güncelle" />
+</form>

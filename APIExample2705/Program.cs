@@ -11,6 +11,13 @@ builder.Services.AddDbContext<ApiExampleDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Baglanti"));
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddCors(opt=>opt
+    .AddDefaultPolicy(p=>
+        p.AllowAnyHeader()
+          .AllowAnyMethod()
+          .AllowAnyOrigin()));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -23,10 +30,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+
 
 app.Run();

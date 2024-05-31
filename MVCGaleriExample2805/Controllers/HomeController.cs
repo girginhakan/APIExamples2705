@@ -53,10 +53,37 @@ namespace MVCGaleriExample2805.Controllers
             return RedirectToAction("Index");
         }
         //----------------------------------------------------------------------
+
+
+        [HttpGet]
+        public async Task<IActionResult> ArabaGuncelle(int id)
+        {
+            var araba = await _httpClient.GetFromJsonAsync<Araba>("https://localhost:7146/api/Araba/IdYeGoreGetir?id=" + id);
+
+            return View(araba);
+        }
+
+        [HttpPost, ActionName("ArabaGuncelle")]
+        public async Task<IActionResult> ArabaGuncelle(int id,Araba araba)
+        {
+            await _httpClient.PutAsJsonAsync("https://localhost:7146/api/Araba/ArabaGuncelle?id=" + id,araba);
+            return RedirectToAction("Index");
+        }
+
+
+
         public IActionResult Privacy()
         {
+
             return View();
         }
+
+        //public async Task<IActionResult> ArabaListesi()
+        //{
+        //    //await _httpClient.GetFromJsonAsync<List<Araba>>("https://localhost:7146/api/Araba/ArabaListesi")
+        //    return View();
+        //}
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

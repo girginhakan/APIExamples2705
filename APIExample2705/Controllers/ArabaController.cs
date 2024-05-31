@@ -24,11 +24,11 @@ namespace APIExample2705.Controllers
         }
 
         [HttpPost("ArabaEkle")]
-        public IActionResult ArabaEkle(Araba araba)
+        public IActionResult ArabaEkle([FromBody]Araba araba)
         {
             _context.Arabalar.Add(araba);
             _context.SaveChanges();
-            return Created();
+            return Ok();
         }
 
         [HttpDelete("ArabaSil")]
