@@ -5,7 +5,13 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIExample2705", "APIExample2705\APIExample2705.csproj", "{0A1A1108-0DF2-4A41-942A-0BE3A15E8A01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCGaleriExample2805", "MVCGaleriExample2805\MVCGaleriExample2805.csproj", "{1D9AD458-4E68-4738-A518-F76ED6D338DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCGaleriExample2805", "MVCGaleriExample2805\MVCGaleriExample2805.csproj", "{1D9AD458-4E68-4738-A518-F76ED6D338DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIResimApp3105", "APIResimApp3105\APIResimApp3105.csproj", "{C66276E8-8E77-4ADA-BA21-19E8D4C8B1A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCResimApp3105", "MVCResimApp3105\MVCResimApp3105.csproj", "{8CB0566A-E4E9-4502-AB92-FD84DA679D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTTokenExample0406", "JWTTokenExample0406\JWTTokenExample0406.csproj", "{A8D2CB5F-0564-41E7-84FC-56D668E6322F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9AD458-4E68-4738-A518-F76ED6D338DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66276E8-8E77-4ADA-BA21-19E8D4C8B1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66276E8-8E77-4ADA-BA21-19E8D4C8B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66276E8-8E77-4ADA-BA21-19E8D4C8B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66276E8-8E77-4ADA-BA21-19E8D4C8B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB0566A-E4E9-4502-AB92-FD84DA679D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB0566A-E4E9-4502-AB92-FD84DA679D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB0566A-E4E9-4502-AB92-FD84DA679D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB0566A-E4E9-4502-AB92-FD84DA679D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D2CB5F-0564-41E7-84FC-56D668E6322F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D2CB5F-0564-41E7-84FC-56D668E6322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D2CB5F-0564-41E7-84FC-56D668E6322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D2CB5F-0564-41E7-84FC-56D668E6322F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

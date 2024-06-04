@@ -1,0 +1,6 @@
+@APIResimApp3105_HostAddress = http://localhost:5188
+
+GET {{APIResimApp3105_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
