@@ -31,18 +31,18 @@ namespace JWTTokenExample0406.Controllers
             .ToArray();
         }
 
-        [HttpGet]
+        [HttpGet("Administrator")]
         [Authorize(Roles = "Administrator")]
         public IActionResult AdminIcın()
         {
             return Ok("Admin içiin olan metod");
         }
 
-        [HttpGet]
-        [Authorize(Roles = "StandartUser")]
+        [HttpGet("AllUsers")]
+        [Authorize(Roles = "StandartUser,Administrator")]
         public IActionResult StandartKullaniciIcın()
         {
-            return Ok("Standart kullanici içiin olan metod");
+            return Ok("Tüm kullanicilar içiin olan metod");
         }
     }
 }
